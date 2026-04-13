@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz The Boys</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Quiz - The Boys</h1>
+
+        <div id="quiz">
+
+            <div class="pergunta">
+                <p>1. Quem é o líder dos Sete?</p>
+                <button onclick="responder(0, true)">Homelander</button>
+                <button onclick="responder(0, false)">Billy Butcher</button>
+                <button onclick="responder(0, false)">Hughie</button>
+            </div>
+
+            <div class="pergunta">
+                <p>2. Qual empresa controla os super-heróis?</p>
+                <button onclick="responder(1, false)">Stark Industries</button>
+                <button onclick="responder(1, true)">Vought</button>
+                <button onclick="responder(1, false)">Wayne Enterprises</button>
+            </div>
+
+            <div class="pergunta">
+                <p>3. O que dá poderes aos supes?</p>
+                <button onclick="responder(2, false)">Radiação</button>
+                <button onclick="responder(2, true)">Composto V</button>
+                <button onclick="responder(2, false)">Mutação genética</button>
+            </div>
+
+        </div>
+
+        <h2 id="resultado"></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
